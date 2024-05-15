@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWS | Estrakcja opinii</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <header>
+        <h1>Ceneo Web Scraper</h1>
+    </header>
+       <nav>
+                    <ul>
+                    <li>
+                            <a href="{{ url_for('extract') }}">EKSTRAKCJA OPINII</a>
+                    </li>
+                    <li>
+                        
+                            <a href="{{ url_for('list') }}">LISTA PRODUKTÓW</a>
+                        
+                    </li>
+                    <li>
+                        
+                            <a href="{{ url_for('home') }}">STRONA GŁÓWNA</a>
+                        
+                    </li>
+                    <li>
+                        
+                            <a href="{{ url_for('about') }}">O AUTORZE</a>
+                        
+                    </li>
+                </ul>
+        </nav>
+         <section style="text-align: center; font-size: 20px; margin-top: 50px;">
+            <div id="profile">
+              <img class="profile" src="{{ url_for('static', filename='kotek-bing.jpg') }}" >
+              <h1 style="text-align: center; font-family: Staatliches; font-size: 40px;" id="kc">PORÓWNYWARKA CEN</h1>
+              <p>Sprawdź ceny poszczególnego produktu tutaj!</p>
+              
+              </section>
+        </main>
+
+    <footer>
+        <h3>Karolina Cieniawska © Akademia Nauk Stosowanych w Nowym Targu</h3>
+    </footer>
+</body>
+</html>

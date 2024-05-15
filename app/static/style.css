@@ -1,0 +1,158 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #1d1d1d;
+}
+header {
+    text-align: center;
+    background-color: #FF8000;
+    margin-top: 0%;
+    padding: 10px;
+    font-family: Staatliches;
+    color: #fff;
+    box-shadow: 1px 1px #FF8000 ;
+    letter-spacing: 5px;}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Roboto;
+    padding: 10px;
+    background-color: #f3993f;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: #a35405;
+}
+#profile
+{
+  width: 100%;
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(24, 24, 24, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left; 
+  margin: 0 auto; 
+  box-shadow: 0px 1px 10px  #d55e0e;
+
+}
+
+#profile h1 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#profile p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: Roboto;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+#contact div {
+    flex: 1;
+}
+
+#contact a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+img.profile {
+    border-radius: 50%; 
+    width: 200px; 
+    height: 200px;
+    display: block;
+    margin: 0 auto; 
+    box-shadow: 0px 1px 10px  #d55e0e;
+}
+
+ul.qua {
+    font-family: roboto;
+    color: #fff;
+    font-size: 16px;
+}
+p.qua {
+   font-weight: bold;
+   color: #655f5f;
+   margin: 10;
+   padding: 0;
+}
+/* Stylowanie całej tabeli */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-family: roboto;
+    font-size: 15px;
+}
+
+/* Stylowanie nagłówków tabeli */
+th {
+    background-color: #737373;;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #737373;
+}
+
+/* Stylowanie komórek tabeli */
+td {
+    border: 1px solid #737373;
+    padding: 5px;
+    color: #fff;
+}
+
+/* Dodanie cienia do komórek */
+td {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p.contact {
+    font-weight: bold;
+    
+}
+.link {
+    text-decoration: none;
+    color: #FF8000;
+    margin: 0;
+    list-style-type: none;
+    font-family: roboto;
+    font-size: 15px;
+}
+a:hover {
+    color: #d55e0e;
+    border-bottom: #642b05 3px solid;
+}
+
+footer{
+    text-align: center;
+    background-color: #FF8000;
+    margin-top: 15px;
+    padding: 5px;
+    font-family: Roboto;
+    color: #fff;
+    font-size: 15px;
+    box-shadow: 1px 1px #FF8000;
+    margin-bottom: 0;
+}

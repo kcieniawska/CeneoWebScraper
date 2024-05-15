@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWS | O mnie</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <header>
+        <h1>Ceneo Web Scraper</h1>
+    </header>
+       <nav>
+                    <ul>
+                    <li>
+                            <a href="{{ url_for('extract') }}">EKSTRAKCJA OPINII</a>
+                    </li>
+                    <li>
+                        
+                            <a href="{{ url_for('list') }}">LISTA PRODUKTÓW</a>
+                        
+                    </li>
+                    <li>
+                        
+                            <a href="{{ url_for('home') }}">STRONA GŁÓWNA</a>
+                        
+                    </li>
+                    <li>
+                        
+                            <a href="{{ url_for('about') }}">O AUTORZE</a>
+                        
+                    </li>
+                </ul>
+        </nav>
+        <section style="text-align: center; font-size: 20px; margin-top: 50px;">
+            <div id="profile">
+              <img class="profile" src="{{ url_for('static', filename='karola.png') }}" >
+              <h1 style="text-align: center; font-family: Staatliches; font-size: 40px;" id="kc">Karolina Cieniawska</h1>
+              <p>Studentka pierwszego roku Informatyki Ekonomicznej w Akademii Nauk Stosowanych w Nowym Targu. Technik Informatyk.</p>
+              
+              <p>Moje kwalifikacje:</p>
+              <ul class="qua">
+              <li>INF.02 • Administracja i eksploatacja systemów komputerowych, urządzeń peryferyjnych i lokalnych sieci komputerowych</li>
+              <li>INF.03 • Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych</li>
+              </ul>
+              <p>
+              Znajomość w strefie IT:
+              <table>
+        <thead>
+            <tr>
+                <th>FRONTEND</th>
+                <th>BACKEND</th>
+                <th>SQL</th>
+                <th>GRAFIKA</th>
+                <th>SYSTEMY OPERACYJNE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>PHP</td>
+                <td>MySQL</td>
+                <td>GIMP</td>
+                <td>Windows</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>C++</td>
+                <td></td>
+                <td>Photoshop</td>
+                <td>Ubuntu</td>
+            </tr>
+            <tr>
+                <td>JS</td>
+                <td>Python</td>
+                <td></td>
+                <td>Inkscape</td>
+                <td></td>
+                
+            </tr>
+        </tbody>
+    </table>
+            <p>Ukończone kursy:</p>
+              <ul class="qua">
+              <li>Programowanie sterowników przemysłowych PLC</li>
+              </ul>  
+              <p>Staż i praktyki zawodowe:</p>
+              <ul class="qua">
+              <li>Praktyka: BibKom Sklep, Serwis </li>
+              <li>Staż: PRO-KOM</li>
+              </ul> 
+            <p class="contact">Skontaktuj się!</p> 
+            <ul>
+            <li class="link">✉️ <a class="link" href="mailto:14690@eans-nt.edu.pl">14690@eans-nt.edu.pl</a></li>
+            <li class="link">🔗 Instagram: <a class="link"href="https://www.instagram.com/kalienczyk/">@kalienczyk</a></li>
+            </ul>
+          </section>
+        </main>
+
+    <footer>
+        <h3>Karolina Cieniawska © Akademia Nauk Stosowanych w Nowym Targu</h3>
+    </footer>
+</body>
+</html>
