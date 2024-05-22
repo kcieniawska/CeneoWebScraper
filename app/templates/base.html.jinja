@@ -39,7 +39,9 @@
                     </li>
                 </ul>
         </nav>
-         <section style="text-align: center; font-size: 20px; margin-top: 50px;">
+        <div>
+        {%block title%}
+          <section style="text-align: center; font-size: 20px; margin-top: 50px;">
             <div id="profile">
               <img class="profile" src="{{ url_for('static', filename='question.png') }}" >
               <h1 style="text-align: center; font-family: Staatliches; font-size: 40px;">Co to jest Ceneo Web Scraper?</h1>
@@ -49,8 +51,12 @@
                <h1 style="text-align: center; font-family: Staatliches; font-size: 40px;">Jakie zastosowałam podejścia?</h1>
                <p>Strukturalne oraz Obiektowe</p>
               </section>
+        {%endblock title%}
+{% block content%}
+    <p></p>
+    {%endblock content %}
+       </div>
         </main>
-
     <footer>
         <h3>Karolina Cieniawska © Akademia Nauk Stosowanych w Nowym Targu</h3>
     </footer>
