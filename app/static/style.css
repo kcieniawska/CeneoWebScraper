@@ -150,7 +150,7 @@ a:hover {
 footer{
     text-align: center;
     background-color: #FF8000;
-    margin-top: 15px;
+    margin-top: 100px;
     padding: 5px;
     font-family: Roboto;
     color: #fff;
@@ -168,13 +168,13 @@ h2 {
 
 .container {
     background-color: transparent;
-    padding: 20px;
+    padding: 40px;
     border-radius: 5px;
     box-shadow: 0 0 10px #FF8000;
     max-width: 500px;
     text-align: center;
     box-sizing: border-box;
-    margin: 30px;
+    margin: 50px;
 
 }
 
@@ -218,8 +218,32 @@ button:hover {
     background-color: #cc6600;
 }
 
-#product-id-display
-{
+p.div {
     color: #fff;
-    font-family: Roboto;
+    font-size: 20px;
+    padding: 50px;
+    font-family: roboto;
+    text-align: center;
+}
+.error-box
+{ 
+    border: #D10000 solid 2px; 
+    padding: 25px; 
+    margin: 20px; 
+    width: 300px; 
+    box-shadow: 0 0 10px #000;
+ 
+}
+
+.error  {
+    border-right: #D10000 solid 2px; 
+    margin-right: 5px;
+    margin-left: 0px;
+   padding-right: 5px;
+    font-size: 20px;
+}
+.error-message {
+    font-family: Staatliches; 
+    color: #fff;
+    font-size: 18px;
 }

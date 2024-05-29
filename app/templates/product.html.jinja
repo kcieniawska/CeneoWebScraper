@@ -1,7 +1,12 @@
 {% extends "base.html.jinja" %}
 {% block title %}
-Lista Produktów
 {% endblock title %}
 {% block content %}
-    <p>To jest strona z listą produktów.</p>
+    <section style="text-align: center; font-size: 20px; margin-top: 50px;">
+            <div id="profile" style="max-width: 1000px;">
+              <img class="profile" src="{{ url_for('static', filename='star.png') }}" >
+              <h2>Ekstrakcja opinii</h2>
+        <p>To jest strona z listą produktów</p>
+
+</section>
 {% endblock content %}
