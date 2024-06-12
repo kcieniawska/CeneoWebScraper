@@ -4,9 +4,27 @@
 {% block content %}
     <section style="text-align: center; font-size: 20px; margin-top: 50px;">
             <div id="profile" style="max-width: 1000px;">
-              <img class="profile" src="{{ url_for('static', filename='star.png') }}" >
-              <h2>Ekstrakcja opinii</h2>
-        <p>To jest strona z listą produktów</p>
-
+              <img class="profile" src="{{ url_for('static', filename='opinion.png') }}" >
+               <h2>Opinie o produkcie: {{ product_id }}</h2>
+<section style="text-align: center; font-size: 20px; margin-top: 50px;">
+    <div id="product">
+                <ul id="profile" style="color: #fff; font-family: Roboto; list-style-type: none;>
+                {% for opinion in product %}
+                    <div id="profile" class="opinion">
+                            <p style="border-width: 2px; border-bottom: 2px solid #B4B1B1; color: #B4B1B1; font-weight: bold;"> {{ opinion.post_date }}</p>
+                            <h3 style="font-family: roboto; color: #fff;">{{ opinion.author }}</h3>
+                            <p>Ocena: {{ opinion.stars }}</p>
+                            <p style=" padding: 10px; border: 1px solid #B4B1B1; color: #D3CDCD; text-align: justify;">{{ opinion.content }}</p>
+                            <p>Data zakupu: {{ opinion.purchase_date }}</p>
+                            <p>Pomocna: {{ opinion.useful }}</p>
+                            <p>Niepomocna: {{ opinion.useless }}</p>
+                            {% if opinion.pros %}
+                            <p>Plusy: {{ ', '.join(opinion.pros) }}</p>
+                            {% endif %}
+                            {% if opinion.cons %}
+                            <p>Minusy: {{ ', '.join(opinion.cons) }}</p>
+                            {% endif %}
+                    </div>
+            {% endfor %}
 </section>
 {% endblock content %}
