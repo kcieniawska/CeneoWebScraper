@@ -1,0 +1,47 @@
+{% extends "base.html.jinja" %}
+{% block title %}
+Lista produktów
+{% endblock title %}
+{% block content %}
+<section style="text-align: center; font-size: 20px; margin-top: 50px;">
+    <div id="profile" style="max-width: 1000px;">
+        <img class="profile" src="{{ url_for('static', filename='list.png') }}">
+        <h2>Lista produktów</h2>
+    <div id="product">
+        <ul style="color: #fff; font-family: Roboto; list-style-type: none; padding: 0;">
+            {% if products %}
+                {% for product in products %}
+                    <li class="opinion">
+                    <p>ID produktu: <span class="products">{{ product['product_id'] }}</span></p>
+                        <h2>{{ product['product_name'] }}</h2>
+                        <p>Liczba opinii: <span class="products">{{ product['opinions_count'] }}</span></p>
+                        <p>Liczba zalet: <span class="products">{{ product['pros_count'] }}</span></p>
+                        <p>Liczba wad: <span class="products">{{ product['cons_count'] }}</span></p>
+                        <p>Średnia ocena: <span class="products">{{ '%.2f' | format(product['average_stars']) }}</span></p>
+                        <p>Histogram ocen:</p>
+                        <ul class="products">
+                            {% for star, count in product['stars_distr'].items() %}
+                                <li><span class="products">{{ star }} gwiazdek:</span> {{ count }}</li>
+                            {% endfor %}
+                        </ul>
+                        <p>Rekomendacje:</p>
+                        <ul class="products">
+                            {% for recommendation, count in product['recommendation_distr'].items() %}
+                                <li>
+                                    {% if recommendation is none %}
+                                        <span class="products">Brak opisu rekomendacji: </span> {{ count }}
+                                    {% else %}
+                                        <span class="products">{{ recommendation }}: </span> {{ count }}
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% endfor %}
+            {% else %}
+                <p>Brak danych do wyświetlenia.</p>
+            {% endif %}
+        </ul>
+    </div>
+</section>
+{% endblock content %}
